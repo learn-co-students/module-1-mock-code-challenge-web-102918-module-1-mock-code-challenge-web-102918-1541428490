@@ -15,10 +15,10 @@ vc1 = VentureCapitalist.new("Bill Cabey", 2000000000)
 vc2 = VentureCapitalist.new("Karen Cabey", 500000)
 vc3 = VentureCapitalist.new("Harry Potter", 3000000000)
 
-# round1 = startup1.sign_contract(vc1, "Angel", 5000)
-# round2 = startup2.sign_contract(vc2, "Angel", 200.0)
-# round3 = vc3.offer_contract(startup3, "Angel", 1000)
-# round4 = vc1.offer_contract(startup2, "Angel", 15000.0)
+round1 = startup1.sign_contract(vc1, "Angel", 5000.0)
+round2 = startup2.sign_contract(vc2, "Angel", 200.0)
+round3 = vc3.offer_contract(startup3, "Angel", 1000.0)
+round4 = vc1.offer_contract(startup2, "Angel", 15000.0)
 #
 # Startup.all
 #
@@ -38,7 +38,7 @@ vc3 = VentureCapitalist.new("Harry Potter", 3000000000)
 # vc1.invested("fashion")
 #
 # VentureCapitalist.tres_commas_club
-# 
+#
 # FundingRound.all
 
 binding.pry

@@ -2,7 +2,7 @@ class VentureCapitalist
 
   attr_accessor :name, :total_worth
 
-  def initialize(name)
+  def initialize(name, total_worth)
     @name = name
     @total_worth = total_worth
     @@all << self
