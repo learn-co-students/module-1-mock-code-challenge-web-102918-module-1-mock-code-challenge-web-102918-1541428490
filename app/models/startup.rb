@@ -14,9 +14,10 @@ class Startup
         @@all 
     end
 
-    def pivot(new_name,new_domain) #? Delete the startup then? 
-       self.domain = new_domain
-       self.name = new_name
+    def pivot(new_name,new_domain) 
+        self.domain = new_domain
+        self.name = new_name
+        self
     end
 
     def self.find_by_founder(name)
@@ -52,6 +53,12 @@ class Startup
 
     def big_investors
         investors.select{|investor| investor.tres_commas_club}
+    end
+
+    private
+
+    def domain=(domain)
+        @domain = domain
     end
 
 
