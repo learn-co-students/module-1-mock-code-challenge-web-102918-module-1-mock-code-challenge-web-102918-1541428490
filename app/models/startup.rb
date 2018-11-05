@@ -14,11 +14,7 @@ class Startup
         @@all 
     end
 
-    def self.find_by_founder(name)
-        
-    end
-
-    def pivot(new_name, new_domain) #? Delete the startup then? 
+    def pivot(new_name,new_domain) #? Delete the startup then? 
        self.domain = new_domain
        self.name = new_name
     end

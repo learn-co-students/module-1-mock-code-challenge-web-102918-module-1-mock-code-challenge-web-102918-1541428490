@@ -39,8 +39,8 @@ We've provided you with a console that you can use to test your code. To enter a
   - given a string of a **domain** and a string of a **name**, change the domain and name of the startup
 <!-- - `Startup.all`
   - should return **all** of the startup instances -->
-- `Startup.find_by_founder`
-  - given a string of a **founder's name**, returns the **first startup** whose founder's name matches
+<!-- - `Startup.find_by_founder`
+  - given a string of a **founder's name**, returns the **first startup** whose founder's name matches -->
 <!-- - `Startup.domains`
   - should return an **array** of all of the different startup domains -->
 
@@ -103,7 +103,7 @@ We've provided you with a console that you can use to test your code. To enter a
   - Returns a **unique** list of all startups this venture capitalist has funded -->
 <!-- - `VentureCapitalist#biggest_investment`
   - returns the largest funding round given by this venture capitalist -->
-- `VentureCapitalist#invested`
-  - given a **domain string**, returns the total amount invested in that domain
+<!-- - `VentureCapitalist#invested`
+  - given a **domain string**, returns the total amount invested in that domain -->
 
 ---

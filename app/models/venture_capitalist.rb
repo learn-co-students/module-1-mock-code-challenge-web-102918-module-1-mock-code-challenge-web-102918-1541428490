@@ -42,8 +42,12 @@ class VentureCapitalist
         sorted_investment.first
     end
 
-    # def invested 
-    #     funding_rounds
-    # end
+    def invested(domain) 
+        funding_same_domain = funding_round.select{|funding_round| funding_round.domain == domain} 
+
+        domain_investment= funding_same_domain.map{|funding_round| funding_round.investment}
+
+        domain_investment.inject(:+)
+    end
 
 end
