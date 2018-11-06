@@ -1,19 +1,18 @@
 class VentureCapitalist
-  attr_accessor :name, :total_worth
+   attr_reader :startup, :venture_capitalist
+  attr_accessor :round_type, :investment
+
   @@all = []
 
-  def initialize(name)
-    @name = name
+  def initialize(startup, venture_capitalist, round_type, investment)
+    @startup = startup
+    @venture_capitalist = venture_capitalist
+    @type = type
+    @investment = investment.to_f
     @@all << self
   end
 
-  def self.tres_commas_club
-    vc_list =[]
-    @@all.each do |vc|
-      if vc.total_worth > 1000000000
-        vc_list << vc.name
-      end
-      vc_list
-    end
+  def self.all
+    @@all
   end
 end
